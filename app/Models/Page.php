@@ -11,5 +11,5 @@ class Page extends Model
     use HasFactory, Translatable;
 
     protected $fillable = ['title', 'content'];
-    private mixed $translatedAttributes = ['title', 'content'];
+    protected $translatable = ['title', 'content'];
 }

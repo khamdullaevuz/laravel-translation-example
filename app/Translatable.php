@@ -13,7 +13,7 @@ trait Translatable
 
     public function getAttribute($key)
     {
-        if (in_array($key, $this->translatedAttributes)) {
+        if (in_array($key, $this->translatable)) {
             return $this->getTranslation($key, app()->getLocale());
         }
 
